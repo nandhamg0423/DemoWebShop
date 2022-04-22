@@ -53,6 +53,6 @@ public class Base {
             File sreenshot = takesScreenshot.getScreenshotAs(OutputType.FILE);
             FileUtils.copyFile(sreenshot, new File("./Screenshots/" + result.getName() + ".png"));
         }
-        driver.close();
+        //driver.close();
     }
 }

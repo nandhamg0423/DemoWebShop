@@ -8,5 +8,7 @@ public class MyAccountPageTest extends Base {
     @Test
     public void verifyMyAccountTest(){
         myaccount=new MyAccountPageTest();
+
     }
+
 }

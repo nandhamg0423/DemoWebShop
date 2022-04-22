@@ -20,9 +20,16 @@ public class MyAccountPage extends ObjectUtility {
     private final String _accountEmail="//div[@class='header-links']//a[@class='account']";
     @FindBy(xpath= _accountEmail) private WebElement accountEmail;
 
+    private final String _accountTitle="//div[@class='header-links']//a[@class='account']";
+    @FindBy(xpath= _accountTitle) private WebElement accountTitle;
+
     /**user action methods**/
     public String getUsername(){
         String emailId=page.getElementText(accountEmail);
         return emailId;
+    }
+    public String getTitleAccount(){
+        String pageT=page.getPageTitle(driver);
+        return pageT;
     }
 }

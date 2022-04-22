@@ -11,6 +11,7 @@ import java.util.Random;
 import java.util.Set;
 
 public class PageUtility {
+
     /**web driver commands**/
 
     public String getPageTitle(WebDriver driver){
@@ -130,5 +131,11 @@ public class PageUtility {
         int randomInt = randomGenerator.nextInt(1000);
         String email="testmail"+ randomInt +"@gmail.com";
         return email;
+    }
+
+    /**mouse click**/
+
+    public void buttonClick(){
+
     }
 }
