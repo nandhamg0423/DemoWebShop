@@ -32,7 +32,9 @@ public class LoginPageTest extends Base {
        Assert.assertEquals(actual_mailId,expected_mailId,"User login Failed");
    }
 
-   @Test(priority = 3,enabled = true,description = "TC_002_Verify Valid User Login")
+   
+
+   @Test(priority = 3,enabled = true,description = "TC_002_Verify Valid User Login",groups = {"smoke"})
    public void verifyLoginPageTitle() {
       home=new HomePage(driver);
       login=home.clickOnLoginMenu();

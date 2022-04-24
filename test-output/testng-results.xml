@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-04-24T20:02:54 IST" name="Regression Suite" finished-at="2022-04-24T20:03:27 IST" duration-ms="33088">
+    <groups>
+      <group name="smoke">
+        <method signature="LoginPageTest.verifyLoginPageTitle()[pri:3, instance:com.demowebshop.test.LoginPageTest@4278a03f]" name="verifyLoginPageTitle" class="com.demowebshop.test.LoginPageTest"/>
+      </group> <!-- smoke -->
+    </groups>
+    <test started-at="2022-04-24T20:02:54 IST" name="Functional Testing" finished-at="2022-04-24T20:03:27 IST" duration-ms="33088">
+      <class name="com.demowebshop.test.MyAccountPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.demowebshop.test.MyAccountPageTest@6ce139a4]" started-at="2022-04-24T20:03:13 IST" name="setUp" finished-at="2022-04-24T20:03:18 IST" duration-ms="5657" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyMyAccountTest()[pri:0, instance:com.demowebshop.test.MyAccountPageTest@6ce139a4]" started-at="2022-04-24T20:03:18 IST" name="verifyMyAccountTest" finished-at="2022-04-24T20:03:18 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyMyAccountTest -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.demowebshop.test.MyAccountPageTest@6ce139a4]" started-at="2022-04-24T20:03:18 IST" name="tearDown" finished-at="2022-04-24T20:03:18 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyMyAccountTest status=SUCCESS method=MyAccountPageTest.verifyMyAccountTest()[pri:0, instance:com.demowebshop.test.MyAccountPageTest@6ce139a4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.demowebshop.test.MyAccountPageTest -->
+      <class name="com.demowebshop.test.RegisterPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.demowebshop.test.RegisterPageTest@2ddc8ecb]" started-at="2022-04-24T20:03:18 IST" name="setUp" finished-at="2022-04-24T20:03:24 IST" duration-ms="5801" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyRegisterPage()[pri:4, instance:com.demowebshop.test.RegisterPageTest@2ddc8ecb]" started-at="2022-04-24T20:03:24 IST" name="verifyRegisterPage" description="TC_002_Verify Valid User Login" finished-at="2022-04-24T20:03:27 IST" duration-ms="3361" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyRegisterPage -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.demowebshop.test.RegisterPageTest@2ddc8ecb]" started-at="2022-04-24T20:03:27 IST" name="tearDown" finished-at="2022-04-24T20:03:27 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyRegisterPage status=SUCCESS method=RegisterPageTest.verifyRegisterPage()[pri:4, instance:com.demowebshop.test.RegisterPageTest@2ddc8ecb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.demowebshop.test.RegisterPageTest -->
+      <class name="com.demowebshop.test.HomePageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.demowebshop.test.HomePageTest@7fc2413d]" started-at="2022-04-24T20:02:54 IST" name="setUp" finished-at="2022-04-24T20:03:00 IST" duration-ms="5396" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyHomePageTitle()[pri:1, instance:com.demowebshop.test.HomePageTest@7fc2413d]" started-at="2022-04-24T20:03:00 IST" name="verifyHomePageTitle" description="TC_001_Verify Home Page Title" finished-at="2022-04-24T20:03:00 IST" duration-ms="700" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHomePageTitle -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.demowebshop.test.HomePageTest@7fc2413d]" started-at="2022-04-24T20:03:00 IST" name="tearDown" finished-at="2022-04-24T20:03:00 IST" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyHomePageTitle status=SUCCESS method=HomePageTest.verifyHomePageTitle()[pri:1, instance:com.demowebshop.test.HomePageTest@7fc2413d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.demowebshop.test.HomePageTest -->
+      <class name="com.demowebshop.test.LoginPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.demowebshop.test.LoginPageTest@4278a03f]" started-at="2022-04-24T20:03:00 IST" name="setUp" finished-at="2022-04-24T20:03:05 IST" duration-ms="4139" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyLogin()[pri:2, instance:com.demowebshop.test.LoginPageTest@4278a03f]" started-at="2022-04-24T20:03:05 IST" name="verifyLogin" description="TC_002_Verify Valid User Login" finished-at="2022-04-24T20:03:07 IST" duration-ms="2246" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLogin -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.demowebshop.test.LoginPageTest@4278a03f]" started-at="2022-04-24T20:03:07 IST" name="tearDown" finished-at="2022-04-24T20:03:07 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLogin status=SUCCESS method=LoginPageTest.verifyLogin()[pri:2, instance:com.demowebshop.test.LoginPageTest@4278a03f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.demowebshop.test.LoginPageTest@4278a03f]" started-at="2022-04-24T20:03:07 IST" name="setUp" finished-at="2022-04-24T20:03:12 IST" duration-ms="4807" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyLoginPageTitle()[pri:3, instance:com.demowebshop.test.LoginPageTest@4278a03f]" started-at="2022-04-24T20:03:12 IST" name="verifyLoginPageTitle" description="TC_002_Verify Valid User Login" finished-at="2022-04-24T20:03:13 IST" duration-ms="927" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginPageTitle -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.demowebshop.test.LoginPageTest@4278a03f]" started-at="2022-04-24T20:03:13 IST" name="tearDown" finished-at="2022-04-24T20:03:13 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLoginPageTitle status=SUCCESS method=LoginPageTest.verifyLoginPageTitle()[pri:3, instance:com.demowebshop.test.LoginPageTest@4278a03f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.demowebshop.test.LoginPageTest -->
+    </test> <!-- Functional Testing -->
+  </suite> <!-- Regression Suite -->
+</testng-results>

@@ -3,6 +3,7 @@ package com.demowebshop.utilities;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 
 import java.util.ArrayList;
@@ -107,10 +108,10 @@ public class PageUtility {
     }
     public ArrayList<String> getAllDropdownValues(WebElement element){
         Select select = new Select(element);
-        List<WebElement> list = select.getOptions();
+        List<WebElement> list1 = select.getOptions();
         ArrayList<String> allOptions = new ArrayList<String>();
-        for (int i = 0; i < list.size(); i++) {
-            allOptions.add(list.get(i).getText());
+        for (int i = 0; i < list1.size(); i++) {
+            allOptions.add(list1.get(i).getText());
         }
         return allOptions;
     }
@@ -135,7 +136,12 @@ public class PageUtility {
 
     /**mouse click**/
 
-    public void buttonClick(){
-
+    public void rightClick(WebDriver driver,WebElement rightClick){
+        Actions actions=new Actions(driver);
+        actions.contextClick(rightClick).build().perform();
+    }
+    public void doubleClick(WebDriver driver,WebElement doubleClick){
+        Actions actions=new Actions(driver);
+        actions.contextClick(doubleClick).build().perform();
     }
 }

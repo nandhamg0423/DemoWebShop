@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Smoke Suite">
+    <test name="Smoke Testing" parallel="methods" thread-count="2">
+        <parameter name="browser" value="chrome"/>
+        <parameter name="url" value="http://demowebshop.tricentis.com/"/>
+        <classes>
+            <class name="com.demowebshop.test.HomePageTest">
+                <methods>
+                    <include name="verifyHomePageTitle"/>
+                </methods>
+            </class>
+            <class name="com.demowebshop.test.LoginPageTest">
+                <methods>
+                    <include name="verifyLogin"/>
+                    <include name="verifyLoginPageTitle"/>
+                </methods>
+            </class>
+            <class name="com.demowebshop.test.MyAccountPageTest">
+                <methods>
+                    <include name="verifyMyAccountTest"/>
+                </methods>
+            </class>
+            <class name="com.demowebshop.test.RegisterPageTest">
+                <methods>
+                    <include name="verifyRegisterPage"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

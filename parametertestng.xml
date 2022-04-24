@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test name="Parameter Test">
+        <parameter name="browser" value="chrome"/>
+        <parameter name="url" value="http://demowebshop.tricentis.com/"/>
+        <classes>
+            <class name="com.demowebshop.test.HomePageTest">
+                <methods>
+                    <include name="verifyHomePageTitle"/>
+                </methods>
+            </class>
+            <class name="com.demowebshop.test.LoginPageTest">
+                <methods>
+                    <include name="verifyLogin"/>
+                </methods>
+            </class>
+            <class name="com.demowebshop.test.MyAccountPageTest">
+                <methods>
+                    <include name="verifyMyAccountTest"/>
+                </methods>
+            </class>
+            <class name="com.demowebshop.test.RegisterPageTest">
+                <methods>
+                    <include name="verifyRegisterPage"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

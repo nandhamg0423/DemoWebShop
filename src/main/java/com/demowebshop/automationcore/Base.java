@@ -12,6 +12,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
 
 import java.io.File;
 import java.io.IOException;
@@ -39,10 +40,11 @@ public class Base {
         driver.manage().deleteAllCookies();
         driver.manage().window().maximize();
     }
-    @BeforeMethod
-    public void setUp() {
-        testInitialize("chrome");
-        driver.get("http://demowebshop.tricentis.com/");
+    @BeforeMethod(alwaysRun = true)
+    @Parameters({"browser", "url"})
+    public void setUp(String browserName, String baseUrl) {
+        testInitialize(browserName);
+        driver.get(baseUrl);
         driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(Constants.PAGE_LOAD_WAIT));
     }
 
@@ -53,6 +55,6 @@ public class Base {
             File sreenshot = takesScreenshot.getScreenshotAs(OutputType.FILE);
             FileUtils.copyFile(sreenshot, new File("./Screenshots/" + result.getName() + ".png"));
         }
-        //driver.close();
+        driver.close();
     }
 }

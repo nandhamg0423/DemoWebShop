@@ -29,7 +29,7 @@ public class MyAccountPage extends ObjectUtility {
         return emailId;
     }
     public String getTitleAccount(){
-        String pageT=page.getPageTitle(driver);
-        return pageT;
+        String accountPageTitle=page.getPageTitle(driver);
+        return accountPageTitle;
     }
 }
