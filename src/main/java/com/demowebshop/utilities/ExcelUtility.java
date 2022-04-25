@@ -19,9 +19,9 @@ public class ExcelUtility {
     public static XSSFWorkbook wb;
     public static XSSFSheet sh;
     public static FileInputStream f;
-    public List<String> readDataFromExcel(String filePath, String sheetName) throws IOException {
+    public List<String> readDataFromExcel(String sheetName) throws IOException {
         DataFormatter formatter = new DataFormatter();
-        f = new FileInputStream(System.getProperty("user.dir") + filePath);
+        f = new FileInputStream(Constants.TESTDATA_EXCEL);
         wb = new XSSFWorkbook(f);
         sh = wb.getSheet(sheetName);
         ArrayList<String> excelRows = new ArrayList<String>();
@@ -33,10 +33,10 @@ public class ExcelUtility {
         return excelRows;
     }
 
-    public ArrayList<ArrayList<String>> readDatasFromExcel(String filePath, String sheetName) throws IOException {
+    public ArrayList<ArrayList<String>> readDatasFromExcel(String sheetName) throws IOException {
         DataFormatter formatter = new DataFormatter();
         ArrayList<ArrayList<String> > data = new ArrayList<ArrayList<String> >();
-        f = new FileInputStream(System.getProperty("user.dir") + filePath);
+        f = new FileInputStream(Constants.TESTDATA_EXCEL);
         wb = new XSSFWorkbook(f);
         sh = wb.getSheet(sheetName);
         int rowCount=sh.getLastRowNum()-sh.getFirstRowNum();

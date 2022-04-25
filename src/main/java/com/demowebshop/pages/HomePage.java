@@ -27,7 +27,7 @@ public class HomePage extends ObjectUtility {
 
     public String getHomePageTitle() throws IOException {
         String title=page.getPageTitle(driver);
-        String expected= String.valueOf(excel.readDataFromExcel("\\src\\main\\resources\\TestData.xlsx","HomePage"));
+        String expected= String.valueOf(excel.readDataFromExcel("HomePage"));
         System.out.println(expected);
         //String actual="Demo Web Shop";
         return title;
